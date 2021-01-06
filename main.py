@@ -5,31 +5,35 @@ from pygame.locals import (
     QUIT,
 )
 
-from classes.circle import Circle
+from classes.circle import Circle, okruhy, okruhy_barva
 from classes.text import Text, circles
-from constants import *
+from classes.player import players
+from classes.window import window
+from components.constants import screen
+from components.start import start, start_bool
 
-import json
+# import json
+from components.open import circles_json
 
 pygame.init()
 clock = pygame.time.Clock()
 
-with open('json/circle_pos.json') as f:
-    circles_json = json.load(f)
+print(okruhy)
 
-# circles = []
 circles_num = []
 for idx, circle in enumerate(circles_json['circles']):
     circles.append(Circle(circle['x'], circle['y']))
-    circles_num.append(Text('arial', 15, f'{idx}', 'black'))
+    circles[idx].colour = okruhy_barva[okruhy[idx]]
+    if idx > 0:
+        circles_num.append(Text('arial', 15, f'{idx}', 'black'))
+    else:
+        circles_num.append(Text('arial', 15, 'START', 'black'))
 
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Hádanka')
 
 running = True
 background = pygame.image.load("img/pozadi.jpg")
 
-# circles = [Circle(50, 790), Circle(1000, 800)]
 
 while running:
     for event in pygame.event.get():
@@ -47,7 +51,17 @@ while running:
 
     for idx, i in enumerate(circles_num):
         i.update(idx)
+        circles_num[0].rect.x -= 5
         screen.blit(i.text_r, i.rect)
+
+    for player in players:
+        player.update()
+        screen.blit(player.surf, player.rect)
+
+    if window.visibility:
+        window.update()
+
+    start()
 
     clock.tick(40)
     pygame.display.flip()
