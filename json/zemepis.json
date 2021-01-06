@@ -1,0 +1,164 @@
+{
+    "otazky": [
+        {
+            "otazka" : "Jaké je hlavní město Litvy?",
+            "odpoved1" : "Sofie",
+            "odpoved2" : "Riga",
+            "odpoved3" : "Vilnius",
+            "odpoved4" : "Varšava",
+            "check" : 3
+        },
+        {
+            "otazka" : "Jakému státu patří ostrov Rujana?",
+            "odpoved1" : "Dánsku",
+            "odpoved2" : "Nizozemsku",
+            "odpoved3" : "Norsku",
+            "odpoved4" : "Německu",
+            "check" : 4
+        },
+        {
+            "otazka" : "Jakému státu patří Mallorca",
+            "odpoved1" : "České republice",
+            "odpoved2" : "Itálii",
+            "odpoved3" : "Španělsku",
+            "odpoved4" : "Německu",
+            "check" : 3 
+        },
+        {
+            "otazka" : "Jak se jmenuje nejvyšší hora Evropy?",
+            "odpoved1" : "Mount Blanc",
+            "odpoved2" : "Monte Rosa",
+            "odpoved3" : "Mount Everest",
+            "odpoved4" : "Kilimandžáro",
+            "check" : 1
+        },
+        {
+            "otazka" : "Jak se jmenuje nejdelší řeka Evropy?",
+            "odpoved1" : "Odra",
+            "odpoved2" : "Volha",
+            "odpoved3" : "Dunaj",
+            "odpoved4" : "Labe",
+            "check" : 2
+        },
+        {
+            "otazka" : "Jak se jmenuje nejmenší stát na světě?",
+            "odpoved1" : "Monte Carlo",
+            "odpoved2" : "Kosovo",
+            "odpoved3" : "Vatikán",
+            "odpoved4" : "Hongkong",
+            "check" : 3
+        },
+        {
+            "otazka" : "Jak se jmenuje největší jezero Evropy?",
+            "odpoved1" : "Kaspické moře",
+            "odpoved2" : "Máchovo jezero",
+            "odpoved3" : "Stříbrné jezero",
+            "odpoved4" : "Ladožské jezero",
+            "check" : 4
+        },
+        {
+            "otazka" : "Jakému státu patří Galapágy",
+            "odpoved1" : "USA",
+            "odpoved2" : "Argentině",
+            "odpoved3" : "Kanadě",
+            "odpoved4" : "Ekvádoru",
+            "check" : 4
+        },
+        {
+            "otazka" : "Jaké je největší město amerických kontinentů?",
+            "odpoved1" : "Ciudad de México",
+            "odpoved2" : "New York",
+            "odpoved3" : "Los Angeles",
+            "odpoved4" : "Rio de Janeiro",
+            "check" : 1
+        },
+        {
+            "otazka" : "Jaká je nejdelší řeka světa?",
+            "odpoved1" : "Nil",
+            "odpoved2" : "Amazonka",
+            "odpoved3" : "Labe",
+            "odpoved4" : "Moldau",
+            "check" : 2
+        },
+        {
+            "otazka" : "Jaká je nejdelší řeka Afriky?",
+            "odpoved1" : "Moldau",
+            "odpoved2" : "Labe",
+            "odpoved3" : "Nil",
+            "odpoved4" : "Amazonka",
+            "check" : 3
+        },
+        {
+            "otazka" : "Jak se říká Japonsku?",
+            "odpoved1" : "Země Velkého bratra",
+            "odpoved2" : "Země zapadajícího slunce",
+            "odpoved3" : "Země vycházejícího slunce",
+            "odpoved4" : "Země tisíců jezer a ostrovů",
+            "check" : 3
+        },
+        {
+            "otazka" : "Co není slušné dělat na veřejnosti v Japonsku?",
+            "odpoved1" : "Smrkat",
+            "odpoved2" : "Být zahalený/á",
+            "odpoved3" : "Mít odkrytá ústa",
+            "odpoved4" : "Držet v ruce mobil",
+            "check" : 1
+        },
+        {
+            "otazka" : "Jaké je hlavní město Hongkongu?",
+            "odpoved1" : "Nagasaki",
+            "odpoved2" : "Victoria",
+            "odpoved3" : "Peking",
+            "odpoved4" : "Baku",
+            "check" : 2 
+        },
+        {
+            "otazka" : "Kolik členských států má USA?",
+            "odpoved1" : "50",
+            "odpoved2" : "51",
+            "odpoved3" : "52",
+            "odpoved4" : "53",
+            "check" : 1
+        },
+        {
+            "otazka" : "Kolik obyvatel má zhruba Ruská federace?",
+            "odpoved1" : "cca 100 mil.",
+            "odpoved2" : "cca 50 mil.",
+            "odpoved3" : "cca 150 mil.",
+            "odpoved4" : "cca 200 mil.",
+            "check" : 3
+        },
+        {
+            "otazka" : "Kdo je prezidentem Číny?",
+            "odpoved1" : "Chi Ťin-tchao",
+            "odpoved2" : "Si Ťin-pching",
+            "odpoved3" : "Wang Čchi-šan",
+            "odpoved4" : "Kim Čong-un",
+            "check" : 2
+        },
+        {
+            "otazka" : "Které zvíře je znakem Nového Zélandu?",
+            "odpoved1" : "Vačice",
+            "odpoved2" : "Klokan",
+            "odpoved3" : "Kivi",
+            "odpoved4" : "Ovce",
+            "check" : 3
+        },
+        {
+            "otazka" : "Kde byl natočen Pán prstenů?",
+            "odpoved1" : "V Austrálii",
+            "odpoved2" : "V Polsku",
+            "odpoved3" : "Ve Francii",
+            "odpoved4" : "Na Novém Zélandu",
+            "check" : 4
+        },
+        {
+            "otazka" : "Která ze značek automobilů se nevyrábí v Česku?",
+            "odpoved1" : "Škoda",
+            "odpoved2" : "Toyota",
+            "odpoved3" : "Ford",
+            "odpoved4" : "Hyundai",
+            "check" : 3
+        }
+    ]
+}

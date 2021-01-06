@@ -1,0 +1,164 @@
+{
+    "otazky": [
+        {
+            "otazka" : "Kdy proběhla bitva na Bílé hoře?",
+            "odpoved1" : "8. 10. 1620",
+            "odpoved2" : "8. 11. 1620",
+            "odpoved3" : "8. 12. 1620",
+            "odpoved4" : "10. 10. 1610",
+            "check" : 2
+        },
+        {
+            "otazka" : "Který mořeplavec objevil Ameriku?",
+            "odpoved1" : "Marco Polo",
+            "odpoved2" : "James Cook",
+            "odpoved3" : "Kryštof Kolumbus",
+            "odpoved4" : "Fernão de Magalhães",
+            "check" : 3
+        },
+        {
+            "otazka" : "Kdy vzniklo demokratické Československo?",
+            "odpoved1" : "28. 9. 1918",
+            "odpoved2" : "28. 10. 1919",
+            "odpoved3" : "1. 1. 1918",
+            "odpoved4" : "28. 10. 1918",
+            "check" : 4 
+        },
+        {
+            "otazka" : "Kdo poprvé v historii obdržel titul Otec vlasti?",
+            "odpoved1" : "Marcus Tullius Cicero",
+            "odpoved2" : "Gaius Julius Caesar",
+            "odpoved3" : "Karel IV. Lucemburský",
+            "odpoved4" : "Václav IV.",
+            "check" : 1
+        },
+        {
+            "otazka" : "Co označuje pojem Únor 1948?",
+            "odpoved1" : "Zahájení tradičních oslav boje za demokracii",
+            "odpoved2" : "Komunistický převrat v Československu",
+            "odpoved3" : "Pád komunismu v Československu",
+            "odpoved4" : "Prohibice v Československu, tzv. suchý únor 1948",
+            "check" : 2
+        },
+        {
+            "otazka" : "Kdy vznikl samostatná Česká republika?",
+            "odpoved1" : "1. 1. 1992",
+            "odpoved2" : "17. 11. 1989",
+            "odpoved3" : "1. 1. 1993",
+            "odpoved4" : "1. 1. 1990",
+            "check" : 3
+        },
+        {
+            "otazka" : "Co to je Mauthausen?",
+            "odpoved1" : "Koncentrační tábor na území Německa",
+            "odpoved2" : "Koncentrační tábor na území Rakouska",
+            "odpoved3" : "Olympijská vesnice z roku 1964",
+            "odpoved4" : "Sídlo říšského panovníka",
+            "check" : 2
+        },
+        {
+            "otazka" : "Kdy proběhla bitva na Moravském poli?",
+            "odpoved1" : "1885",
+            "odpoved2" : "1278",
+            "odpoved3" : "1942",
+            "odpoved4" : "1315",
+            "check" : 2
+        },
+        {
+            "otazka" : "V jakém roce byl T. G. Masaryk zvolen podruhé prezidentem?",
+            "odpoved1" : "1918",
+            "odpoved2" : "1926",
+            "odpoved3" : "1920",
+            "odpoved4" : "1910",
+            "check" : 3
+        },
+        {
+            "otazka" : "V jakém roce byl T. G. Masaryk zvolen poprvé prezidentem?",
+            "odpoved1" : "1918",
+            "odpoved2" : "1926",
+            "odpoved3" : "1920",
+            "odpoved4" : "1910",
+            "check" : 1
+        },
+        {
+            "otazka" : "Co bylo záminkou vzniku 1. světové války?",
+            "odpoved1" : "Světová hospodářská krize",
+            "odpoved2" : "Krach newyorské burzy",
+            "odpoved3" : "Smrt Franze Josefa I.",
+            "odpoved4" : "Atentát na Ferdinanda d'Este v Sarajevu",
+            "check" : 4
+        },
+        {
+            "otazka" : "Kdy byla podepsána mnichovská dohoda?",
+            "odpoved1" : "1938",
+            "odpoved2" : "1939",
+            "odpoved3" : "1935",
+            "odpoved4" : "1945",
+            "check" : 1
+        },
+        {
+            "otazka" : "Co označuje tzv. anšlus?",
+            "odpoved1" : "Připojení Sudet k Německu",
+            "odpoved2" : "Připojení Rakouska k Německu",
+            "odpoved3" : "Zákopovou válku",
+            "odpoved4" : "Porážku Sovětského svazu",
+            "check" : 2
+        },
+        {
+            "otazka" : "Co označuje tzv. anšlus?",
+            "odpoved1" : "Připojení Sudet k Německu",
+            "odpoved2" : "Připojení Rakouska k Německu",
+            "odpoved3" : "Zákopovou válku",
+            "odpoved4" : "Porážku Sovětského svazu",
+            "check" : 2 
+        },
+        {
+            "otazka" : "Kdo je hlavním patronem českého národa?",
+            "odpoved1" : "Sv. Patrik",
+            "odpoved2" : "Sv. Mikuláš",
+            "odpoved3" : "Sv. Václav",
+            "odpoved4" : "Sv. Urban",
+            "check" : 3
+        },
+        {
+            "otazka" : "Co zavedla za své vlády Marie Terezie?",
+            "odpoved1" : "Povinnou karanténu",
+            "odpoved2" : "Povinnou školní docházku",
+            "odpoved3" : "Privatizaci",
+            "odpoved4" : "Velké popravy šlechty",
+            "check" : 2
+        },
+        {
+            "otazka" : "Který kníže začal razit 1. české mince, tzv. stříbrné denáry?",
+            "odpoved1" : "Boleslav I.",
+            "odpoved2" : "Přemysl Otakar II.",
+            "odpoved3" : "Boleslav II.",
+            "odpoved4" : "Pipin Krátký",
+            "check" : 1
+        },
+        {
+            "otazka" : "Kde byl zavražděn Václav III.?",
+            "odpoved1" : "Ve Staré Boleslavi",
+            "odpoved2" : "V Opavě",
+            "odpoved3" : "V Jičíně",
+            "odpoved4" : "V Olomouci",
+            "check" : 4
+        },
+        {
+            "otazka" : "Jak se nazývá soubor listin, které jsou spjaty s Přemyslem Otakarem I.?",
+            "odpoved1" : "Manifest České moderny",
+            "odpoved2" : "Zlatá bula sicilská",
+            "odpoved3" : "Manifest dadaismu",
+            "odpoved4" : "Mnichovská dohoda",
+            "check" : 2
+        },
+        {
+            "otazka" : "Který říšský protektor vytvořil roku 1939 RSHA?",
+            "odpoved1" : "Reinhard Heydrich",
+            "odpoved2" : "Adolf Hitler",
+            "odpoved3" : "Adolf Eichmann",
+            "odpoved4" : "Jozef Gabčík",
+            "check" : 1
+        }
+    ]
+}
