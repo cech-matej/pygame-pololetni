@@ -6,13 +6,23 @@ from classes.text import circles
 
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, num):
+    def __init__(self, num, player):
         super(Player, self).__init__()
         self.num = num
         self.surf = pygame.image.load(f"img/player{self.num}.png").convert()
-        self.surf = pygame.transform.scale(self.surf, (30, 30))
+
+        if player:
+            self.surf = pygame.transform.scale(self.surf, (30, 30))
+        else:
+            self.surf = pygame.transform.scale(self.surf, (100, 100))
+
         self.surf.set_colorkey((0, 0, 0), RLEACCEL)
         self.rect = self.surf.get_rect()
+
+        if not player:
+            self.rect.x = 80
+            self.rect.y = 80
+
         self.pos = 0
         self.turn = False
 
@@ -28,9 +38,12 @@ class Player(pygame.sprite.Sprite):
 
 # screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
-player1 = Player(1)
+player1 = Player(1, True)
+player1_window = Player(1, False)
 player1.turn = True
-player2 = Player(2)
+
+player2 = Player(2, True)
+player2_window = Player(2, False)
 
 players = pygame.sprite.Group()
 players.add(player1, player2)

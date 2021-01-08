@@ -17,5 +17,9 @@ class Text(pygame.sprite.Sprite):
         self.rect.x = circles[num].x - 15
         self.rect.y = circles[num].y - 25
 
+    def update_question(self):
+        txt = pygame.font.SysFont(self.font, self.size)
+        self.text_r = txt.render(self.text, True, self.color)
+
 
 circles = []
