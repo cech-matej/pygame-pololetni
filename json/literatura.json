@@ -70,7 +70,7 @@
             "odpoved2" : "Sestřička",
             "odpoved3" : "Maminka",
             "odpoved4" : "Babička",
-            "check" : 1
+            "check" : 4
         },
         {
             "otazka" : "Jak se přezdívalo Františku Palackému?",
@@ -90,7 +90,7 @@
         },
         {
             "otazka" : "Dadaismus klade důraz na:",
-            "odpoved1" : "Hesmysl",
+            "odpoved1" : "Nesmysl",
             "odpoved2" : "Lásku",
             "odpoved3" : "Budoucnost",
             "odpoved4" : "Cit",
@@ -134,7 +134,7 @@
             "odpoved2" : "Takový je život",
             "odpoved3" : "Užívej dne/života",
             "odpoved4" : "Miluj ostatní jako sám sebe",
-            "check" : 2
+            "check" : 3
         },
         {
             "otazka" : "Ve kterém století žil Jean de La Fontaine?",
