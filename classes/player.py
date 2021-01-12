@@ -1,8 +1,8 @@
 import pygame
 from pygame.locals import RLEACCEL
 
-from components.constants import screen
-from classes.text import circles
+from components.constants import screen, SCREEN_WIDTH, SCREEN_HEIGHT
+from classes.text import circles, Text
 
 
 class Player(pygame.sprite.Sprite):
@@ -56,3 +56,23 @@ def switch_turn():
     else:
         player1.turn = True
         player2.turn = False
+
+
+def is_end():
+    if player1.pos == 18:
+        screen.fill((30, 144, 255))
+        end = Text('arial', 50, 'Vyhrál MODRÝ hráč!', 'white')
+        end.rect.x = SCREEN_WIDTH / 2 - 240
+        end.rect.y = SCREEN_HEIGHT / 2 - 25
+        screen.blit(end.text_r, end.rect)
+        return True
+    elif player2.pos == 18:
+        screen.fill((204, 0, 0))
+        end = Text('arial', 50, 'Vyhrál ČERVENÝ hráč!', 'white')
+        end.rect.x = SCREEN_WIDTH / 2 - 260
+        end.rect.y = SCREEN_HEIGHT / 2 - 25
+        screen.blit(end.text_r, end.rect)
+        return True
+
+    return False
+

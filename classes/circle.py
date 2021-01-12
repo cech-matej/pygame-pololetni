@@ -26,5 +26,4 @@ for _ in range(18):
     num = random.randint(0, 2)
     okruhy.append(num)
 
-# POUZE DOČASNĚ
-okruhy[0] = 0
+
