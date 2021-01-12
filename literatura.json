@@ -1,0 +1,164 @@
+{
+    "otazky": [
+        {
+            "otazka" : "Kdo napsal Povídky malostranské?",
+            "odpoved1" : "Josef Václav Sládek",
+            "odpoved2" : "Jan Neruda",
+            "odpoved3" : "Jaroslav Vrchlický",
+            "odpoved4" : "Viktor Dyk",
+            "check" : 2
+        },
+        {
+            "otazka" : "Kde se narodil Fráňa Šrámek?",
+            "odpoved1" : "V Sobotce",
+            "odpoved2" : "V Praze",
+            "odpoved3" : "V Opavě",
+            "odpoved4" : "Ve Vídni",
+            "check" : 1
+        },
+        {
+            "otazka" : "Jakého literárního druhu využil autor Máje?",
+            "odpoved1" : "epiky",
+            "odpoved2" : "lyriky",
+            "odpoved3" : "lyriky a epiky",
+            "odpoved4" : "dramatu",
+            "check" : 3 
+        },
+        {
+            "otazka" : "Které z těchto děl nenapsal Josef Kajetán Tyl?",
+            "odpoved1" : "Fidlovačka",
+            "odpoved2" : "Zlomky epopeje",
+            "odpoved3" : "Paličova dcera",
+            "odpoved4" : "Strakonický dudák",
+            "check" : 2
+        },
+        {
+            "otazka" : "Který autor napsal dílo Důmyslný rytíř Don Quijote de la Mancha?",
+            "odpoved1" : "Miguel de Cervantes y Saavedra",
+            "odpoved2" : "Molière",
+            "odpoved3" : "Jean Racine",
+            "odpoved4" : "Voltaire",
+            "check" : 1
+        },
+        {
+            "otazka" : "Který z těchto autorů je nejmladší?",
+            "odpoved1" : "Bohumil Hrabal",
+            "odpoved2" : "Karel Čapek",
+            "odpoved3" : "George Orwell",
+            "odpoved4" : "Anne Franková",
+            "check" : 4
+        },
+        {
+            "otazka" : "Ke kterému literárnímu směru patřil Franz Kafka?",
+            "odpoved1" : "K impresionismu",
+            "odpoved2" : "K futurismu",
+            "odpoved3" : "K modernismu",
+            "odpoved4" : "K realismu",
+            "check" : 3
+        },
+        {
+            "otazka" : "Na náměty jakého autora byl natočen film o Švejkovi?",
+            "odpoved1" : "Charlese Baudelaira",
+            "odpoved2" : "Jaroslava Haška",
+            "odpoved3" : "Karla Čapka",
+            "odpoved4" : "Walta Whitmana",
+            "check" : 2
+        },
+        {
+            "otazka" : "Jak se jmenuje dílo, kde vystupuje šílená Viktorka?",
+            "odpoved1" : "Dědeček",
+            "odpoved2" : "Sestřička",
+            "odpoved3" : "Maminka",
+            "odpoved4" : "Babička",
+            "check" : 4
+        },
+        {
+            "otazka" : "Jak se přezdívalo Františku Palackému?",
+            "odpoved1" : "otec vlasti",
+            "odpoved2" : "učitel národů",
+            "odpoved3" : "otec národa",
+            "odpoved4" : "otec Slovanů",
+            "check" : 3
+        },
+        {
+            "otazka" : "Co nejvíce vystihuje romantismus?",
+            "odpoved1" : "Vykreslení reality",
+            "odpoved2" : "Obdiv technických vymožeností",
+            "odpoved3" : "Návrat k antice",
+            "odpoved4" : "Hrdina z okraje společnosti",
+            "check" : 4
+        },
+        {
+            "otazka" : "Dadaismus klade důraz na:",
+            "odpoved1" : "Nesmysl",
+            "odpoved2" : "Lásku",
+            "odpoved3" : "Budoucnost",
+            "odpoved4" : "Cit",
+            "check" : 1
+        },
+        {
+            "otazka" : "Kdo vytvořil postavu Sherlocka Holmese?",
+            "odpoved1" : "George Orwell",
+            "odpoved2" : "Charles Dickens",
+            "odpoved3" : "Arthur Conan Doyle",
+            "odpoved4" : "Walt Whitman",
+            "check" : 3
+        },
+        {
+            "otazka" : "Kterého roku byl K. H. Borovský deportován do Brixenu?",
+            "odpoved1" : "1851",
+            "odpoved2" : "1852",
+            "odpoved3" : "1853",
+            "odpoved4" : "1854",
+            "check" : 1
+        },
+        {
+            "otazka" : "Kdo popsal trojského koně?",
+            "odpoved1" : "Ikaros",
+            "odpoved2" : "Daidalos",
+            "odpoved3" : "Homér",
+            "odpoved4" : "Jidáš",
+            "check" : 3
+        },
+        {
+            "otazka" : "Kdo byla Herodiada?",
+            "odpoved1" : "Služebná Jany Eyrové",
+            "odpoved2" : "Biblická postava",
+            "odpoved3" : "Bohyně lásky",
+            "odpoved4" : "Ježíšova matka",
+            "check" : 2
+        },
+        {
+            "otazka" : "Carpe diem v překladu znamená:",
+            "odpoved1" : "Pamatuj na smrt",
+            "odpoved2" : "Takový je život",
+            "odpoved3" : "Užívej dne/života",
+            "odpoved4" : "Miluj ostatní jako sám sebe",
+            "check" : 3
+        },
+        {
+            "otazka" : "Ve kterém století žil Jean de La Fontaine?",
+            "odpoved1" : "14. století",
+            "odpoved2" : "15. století",
+            "odpoved3" : "16. století",
+            "odpoved4" : "17. století",
+            "check" : 4
+        },
+        {
+            "otazka" : "Jaky název nese první česká balada?",
+            "odpoved1" : "Toman a lesní panna",
+            "odpoved2" : "Zlatý kolovrat",
+            "odpoved3" : "Poklad",
+            "odpoved4" : "Polednice",
+            "check" : 1
+        },
+        {
+            "otazka" : "Jaké národnosti byl William Shakespeare?",
+            "odpoved1" : "Francouzské",
+            "odpoved2" : "Britské",
+            "odpoved3" : "Ruské",
+            "odpoved4" : "Švýcarské",
+            "check" : 2
+        }
+    ]
+}
