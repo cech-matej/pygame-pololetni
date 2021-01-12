@@ -8,10 +8,10 @@ from pygame.locals import (
 
 from classes.circle import Circle, okruhy, okruhy_barva
 from classes.text import Text, circles
-from classes.player import players, player1, player2, player1_window, switch_turn
-from classes.window import window, w_odpovedi
+from classes.player import players, player1, player2, player1_window, switch_turn, is_end
+from classes.window import window, w_odpovedi, button_order, window_clear
 
-from components.constants import screen, SCREEN_WIDTH, SCREEN_HEIGHT
+from components.constants import screen, SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_COLOUR
 
 from components.open import circles_json
 from components.open import zemepis_json, dejepis_json, literatura_json
@@ -46,7 +46,7 @@ def answer_check(active_player):
         if m_x <= button_pos['posun_x'] + button_pos['x'] and m_y <= button_pos['posun_y'] + button_pos['y'] \
                 + (save_click - 1) * button_pos['k']:
             print("Správně!")
-
+            button_order[save_click - 1].colour = (50, 205, 50)
             if active_player == 1:
                 player1.pos += 1
             else:
@@ -55,16 +55,16 @@ def answer_check(active_player):
                 player2.turn = True'''
 
             switch_turn()
-
     for index, number in enumerate(spatne_kontrola):
         if number == 1:
             if m_x >= button_pos['x'] and m_y >= button_pos['y'] + index * button_pos['k']:
                 if m_x <= button_pos['posun_x'] + button_pos['x'] and m_y <= button_pos['posun_y'] + button_pos['y'] \
                         + index * button_pos['k']:
                     print("Špatně!")
-
+                    button_order[index].colour = (255, 0,  0)
                     switch_turn()
-
+    btn_txt_update(save_click)
+    window_clear()
 
 pygame.init()
 clock = pygame.time.Clock()
@@ -149,66 +149,59 @@ while running:
         i.update(idx)
         circles_num[0].rect.x -= 5
         screen.blit(i.text_r, i.rect)
+    if not is_end():
+        for player in players:
+            player.update()
+            screen.blit(player.surf, player.rect)
 
-    for player in players:
-        player.update()
-        screen.blit(player.surf, player.rect)
+        # <-------- Kontrola odpovědi -------->
+        # Hráč 1
+        if player1.turn and rep > 120:
+            window.update(1)
 
-    # <-------- Kontrola odpovědi -------->
-    # Hráč 1
-    if player1.turn and rep > 120:
-        window.update(1)
+            if question_active:
+                if okruhy[player1.pos] == 0:
+                    rand_otaz = random.randint(0, len(zemepis_json['otazky']))
+                    save_click = zemepis_json['otazky'][rand_otaz - 1]['check']
+                elif okruhy[player1.pos] == 1:
+                    rand_otaz = random.randint(0, len(dejepis_json['otazky']))
+                    save_click = dejepis_json['otazky'][rand_otaz - 1]['check']
+                elif okruhy[player1.pos] == 2:
+                    rand_otaz = random.randint(0, len(literatura_json['otazky']))
+                    save_click = literatura_json['otazky'][rand_otaz - 1]['check']
+                q_a_update(okruhy[player1.pos])
+                question_active = False
+            btn_txt_update(save_click)
 
-        if question_active:
-            if okruhy[player1.pos] == 0:
-                rand_otaz = random.randint(0, len(zemepis_json['otazky']))
-                save_click = zemepis_json['otazky'][rand_otaz - 1]['check']
-            elif okruhy[player1.pos] == 1:
-                rand_otaz = random.randint(0, len(dejepis_json['otazky']))
-                save_click = dejepis_json['otazky'][rand_otaz - 1]['check']
-            elif okruhy[player1.pos] == 2:
-                rand_otaz = random.randint(0, len(literatura_json['otazky']))
-                save_click = literatura_json['otazky'][rand_otaz - 1]['check']
+            if mouse_down:
+                question_active = True
+                answer_check(1)
+                rep = 0
+        # Hráč 2
+        if player2.turn and rep > 120:
+            window.update(2)
 
-            q_a_update(okruhy[player1.pos])
-            question_active = False
+            if question_active:
+                if okruhy[player2.pos] == 0:
+                    rand_otaz = random.randint(0, len(zemepis_json['otazky']))
+                    save_click = zemepis_json['otazky'][rand_otaz - 1]['check']
+                elif okruhy[player2.pos] == 1:
+                    rand_otaz = random.randint(0, len(dejepis_json['otazky']))
+                    save_click = dejepis_json['otazky'][rand_otaz - 1]['check']
+                elif okruhy[player2.pos] == 2:
+                    rand_otaz = random.randint(0, len(literatura_json['otazky']))
+                    save_click = literatura_json['otazky'][rand_otaz - 1]['check']
 
-            # save_click = zemepis_json['otazky'][rand_otaz - 1]['check']
-        btn_txt_update(save_click)
+                q_a_update(okruhy[player2.pos])
+                question_active = False
 
-        if mouse_down:
-            question_active = True
-            answer_check(1)
-            rep = 0
+            btn_txt_update(save_click)
 
-    # Hráč 2
-    if player2.turn and rep > 120:
-        window.update(2)
-
-        if question_active:
-            if okruhy[player2.pos] == 0:
-                rand_otaz = random.randint(0, len(zemepis_json['otazky']))
-                save_click = zemepis_json['otazky'][rand_otaz - 1]['check']
-            elif okruhy[player2.pos] == 1:
-                rand_otaz = random.randint(0, len(dejepis_json['otazky']))
-                save_click = dejepis_json['otazky'][rand_otaz - 1]['check']
-            elif okruhy[player2.pos] == 2:
-                rand_otaz = random.randint(0, len(literatura_json['otazky']))
-                save_click = literatura_json['otazky'][rand_otaz - 1]['check']
-
-            q_a_update(okruhy[player2.pos])
-            question_active = False
-
-            # save_click = zemepis_json['otazky'][rand_otaz - 1]['check']
-        btn_txt_update(save_click)
-
-        if mouse_down:
-            question_active = True
-            answer_check(2)
-            rep = 0
-
-    spatne_kontrola = [1, 1, 1, 1]
-
+            if mouse_down:
+                question_active = True
+                answer_check(2)
+                rep = 0
+        spatne_kontrola = [1, 1, 1, 1]
     clock.tick(40)
     rep += 1
     pygame.display.flip()
