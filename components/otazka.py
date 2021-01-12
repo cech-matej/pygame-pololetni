@@ -1,5 +1,4 @@
 from components.open import zemepis_json, dejepis_json, literatura_json
-import random
 
 
 def blit_otazky(i, okruh):
