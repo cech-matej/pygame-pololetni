@@ -9,4 +9,3 @@ okruhy_okruh = {
     1: 'dejepis',
     2: 'literatura'
 }
-

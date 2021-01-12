@@ -47,3 +47,12 @@ player2_window = Player(2, False)
 
 players = pygame.sprite.Group()
 players.add(player1, player2)
+
+
+def switch_turn():
+    if player1.turn:
+        player1.turn = False
+        player2.turn = True
+    else:
+        player1.turn = True
+        player2.turn = False
