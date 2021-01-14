@@ -36,8 +36,6 @@ class Player(pygame.sprite.Sprite):
             self.rect.y = circles[self.pos].y - 10
 
 
-# screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-
 player1 = Player(1, True)
 player1_window = Player(1, False)
 player1.turn = True

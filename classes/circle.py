@@ -20,8 +20,6 @@ class Circle(pygame.sprite.Sprite):
         self.surf = pygame.draw.circle(screen, (0, 0, 0), (self.x, self.y), self.r, 2)
 
 
-# screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-
 for _ in range(18):
     num = random.randint(0, 2)
     okruhy.append(num)
