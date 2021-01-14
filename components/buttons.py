@@ -3,5 +3,5 @@ button_pos = {
     'y': 330,
     'posun_x': 800,
     'posun_y': 95,
-    'k': 105,
+    'k': 105
 }

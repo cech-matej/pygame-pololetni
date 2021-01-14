@@ -75,4 +75,3 @@ def is_end():
         return True
 
     return False
-

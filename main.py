@@ -8,17 +8,36 @@ from pygame.locals import (
 
 from classes.circle import Circle, okruhy, okruhy_barva
 from classes.text import Text, circles
-from classes.player import players, player1, player2, player1_window, switch_turn, is_end
+from classes.player import players, player1, player2, switch_turn, is_end
 from classes.window import window, w_odpovedi, button_order, window_clear
 
-from components.constants import screen, SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_COLOUR
+from components.constants import screen, SCREEN_WIDTH, SCREEN_HEIGHT, TIMER
 
 from components.open import circles_json
 from components.open import zemepis_json, dejepis_json, literatura_json
 from components.otazka import blit_otazky, blit_odpoved
 from components.buttons import button_pos
+from components.output_pdf import q_player1, q_player2, a_player1, a_player2, c_player1, c_player2, output
 
 import random
+
+
+def active_question(pos, p_list):
+    rand, save = None, None
+    if okruhy[pos] == 0:
+        rand = random.randint(0, len(zemepis_json['otazky']))
+        save = zemepis_json['otazky'][rand - 1]['check']
+        p_list.append(zemepis_json['otazky'][rand - 1]['otazka'])
+    elif okruhy[pos] == 1:
+        rand = random.randint(0, len(dejepis_json['otazky']))
+        save = dejepis_json['otazky'][rand - 1]['check']
+        p_list.append(dejepis_json['otazky'][rand - 1]['otazka'])
+    elif okruhy[pos] == 2:
+        rand = random.randint(0, len(literatura_json['otazky']))
+        save = literatura_json['otazky'][rand - 1]['check']
+        p_list.append(literatura_json['otazky'][rand - 1]['otazka'])
+
+    return rand, save
 
 
 def q_a_update(okruh):
@@ -30,7 +49,7 @@ def q_a_update(okruh):
         odpoved.update_question()
 
 
-def btn_txt_update(save):
+def btn_txt_update():
     for index, btn in enumerate(w_odpovedi):
         btn.update(index)
 
@@ -42,34 +61,59 @@ def btn_txt_update(save):
 
 def answer_check(active_player):
     m_x, m_y = pygame.mouse.get_pos()
+    # Správně
     if m_x >= button_pos['x'] and m_y >= button_pos['y'] + (save_click - 1) * button_pos['k']:
         if m_x <= button_pos['posun_x'] + button_pos['x'] and m_y <= button_pos['posun_y'] + button_pos['y'] \
                 + (save_click - 1) * button_pos['k']:
-            print("Správně!")
             button_order[save_click - 1].colour = (50, 205, 50)
             if active_player == 1:
                 player1.pos += 1
+
+                output_append(a_player1, save_click)
+                c_player1.append(1)
             else:
                 player2.pos += 1
-                '''player1.turn = False
-                player2.turn = True'''
+
+                output_append(a_player2, save_click)
+                c_player2.append(1)
 
             switch_turn()
+    # Špatně
     for index, number in enumerate(spatne_kontrola):
         if number == 1:
             if m_x >= button_pos['x'] and m_y >= button_pos['y'] + index * button_pos['k']:
                 if m_x <= button_pos['posun_x'] + button_pos['x'] and m_y <= button_pos['posun_y'] + button_pos['y'] \
                         + index * button_pos['k']:
-                    print("Špatně!")
                     button_order[index].colour = (255, 0,  0)
+
+                    if active_player == 1:
+                        output_append(a_player1, index + 1)
+                        c_player1.append(0)
+                    else:
+                        output_append(a_player2, index + 1)
+                        c_player2.append(0)
+
                     switch_turn()
-    btn_txt_update(save_click)
+    btn_txt_update()
     window_clear()
+
+    pygame.display.flip()
+    pygame.time.wait(2000)
+
+
+def output_append(p_list, number):
+    if number == 1:
+        p_list.append(odpoved1.text)
+    elif number == 2:
+        p_list.append(odpoved2.text)
+    elif number == 3:
+        p_list.append(odpoved3.text)
+    elif number == 4:
+        p_list.append(odpoved4.text)
+
 
 pygame.init()
 clock = pygame.time.Clock()
-
-print(okruhy)
 
 circles_num = []
 for idx, circle in enumerate(circles_json['circles']):
@@ -156,46 +200,33 @@ while running:
 
         # <-------- Kontrola odpovědi -------->
         # Hráč 1
-        if player1.turn and rep > 120:
+        if player1.turn and rep > TIMER:
             window.update(1)
 
             if question_active:
-                if okruhy[player1.pos] == 0:
-                    rand_otaz = random.randint(0, len(zemepis_json['otazky']))
-                    save_click = zemepis_json['otazky'][rand_otaz - 1]['check']
-                elif okruhy[player1.pos] == 1:
-                    rand_otaz = random.randint(0, len(dejepis_json['otazky']))
-                    save_click = dejepis_json['otazky'][rand_otaz - 1]['check']
-                elif okruhy[player1.pos] == 2:
-                    rand_otaz = random.randint(0, len(literatura_json['otazky']))
-                    save_click = literatura_json['otazky'][rand_otaz - 1]['check']
+                rand_otaz, save_click = active_question(player1.pos, q_player1)
+
                 q_a_update(okruhy[player1.pos])
                 question_active = False
-            btn_txt_update(save_click)
+
+            btn_txt_update()
 
             if mouse_down:
                 question_active = True
                 answer_check(1)
                 rep = 0
+
         # Hráč 2
-        if player2.turn and rep > 120:
+        if player2.turn and rep > TIMER:
             window.update(2)
 
             if question_active:
-                if okruhy[player2.pos] == 0:
-                    rand_otaz = random.randint(0, len(zemepis_json['otazky']))
-                    save_click = zemepis_json['otazky'][rand_otaz - 1]['check']
-                elif okruhy[player2.pos] == 1:
-                    rand_otaz = random.randint(0, len(dejepis_json['otazky']))
-                    save_click = dejepis_json['otazky'][rand_otaz - 1]['check']
-                elif okruhy[player2.pos] == 2:
-                    rand_otaz = random.randint(0, len(literatura_json['otazky']))
-                    save_click = literatura_json['otazky'][rand_otaz - 1]['check']
+                rand_otaz, save_click = active_question(player2.pos, q_player2)
 
                 q_a_update(okruhy[player2.pos])
                 question_active = False
 
-            btn_txt_update(save_click)
+            btn_txt_update()
 
             if mouse_down:
                 question_active = True
@@ -205,3 +236,7 @@ while running:
     clock.tick(40)
     rep += 1
     pygame.display.flip()
+
+
+output(1, q_player1, a_player1, c_player1)
+output(2, q_player2, a_player2, c_player2)
