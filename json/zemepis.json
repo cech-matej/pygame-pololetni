@@ -159,6 +159,70 @@
             "odpoved3" : "Ford",
             "odpoved4" : "Hyundai",
             "check" : 3
+        },
+        {
+            "otazka" : "Co je jednou z atrakcí Finska?",
+            "odpoved1" : "Londýnské oko",
+            "odpoved2" : "Sauny",
+            "odpoved3" : "Písečné pouště",
+            "odpoved4" : "Starobylé pyramidy",
+            "check" : 2
+        },
+        {
+            "otazka" : "Jaké je hlavní město Německa?",
+            "odpoved1" : "Berlín",
+            "odpoved2" : "Praha",
+            "odpoved3" : "Paříž",
+            "odpoved4" : "Baku",
+            "check" : 1
+        },
+        {
+            "otazka" : "Jaké je hlavní město Ázerbajdžánu?",
+            "odpoved1" : "Ankara",
+            "odpoved2" : "Baku",
+            "odpoved3" : "Teherán",
+            "odpoved4" : "Biškek",
+            "check" : 2
+        },
+        {
+            "otazka" : "Která moře spojuje Panamský průplav?",
+            "odpoved1" : "Černé a Středozemní moře",
+            "odpoved2" : "Baltské a Severní moře",
+            "odpoved3" : "Karibské moře a Tichý oceán",
+            "odpoved4" : "Středozemní moře a Atlantský oceán",
+            "check" : 3
+        },
+        {
+            "otazka" : "Které moře náleží Polsku?",
+            "odpoved1" : "Severní",
+            "odpoved2" : "Jaderské",
+            "odpoved3" : "Baltské",
+            "odpoved4" : "Norské",
+            "check" : 3
+        },
+        {
+            "otazka" : "Jaký jazyk je ve Švýcarsku úřední?",
+            "odpoved1" : "němčina",
+            "odpoved2" : "italština",
+            "odpoved3" : "francouzština",
+            "odpoved4" : "všechny výše uvedené",
+            "check" : 4
+        },
+        {
+            "otazka" : "Kdy vystoupila Velká Británie z EU?",
+            "odpoved1" : "roku 2016",
+            "odpoved2" : "roku 2020",
+            "odpoved3" : "roku 2021",
+            "odpoved4" : "ještě nevystoupila",
+            "check" : 3
+        },
+        {
+            "otazka" : "Jak se jmenuje ruská měna?",
+            "odpoved1" : "rubl",
+            "odpoved2" : "frank",
+            "odpoved3" : "koruna",
+            "odpoved4" : "marka",
+            "check" : 1
         }
     ]
 }

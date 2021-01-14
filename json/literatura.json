@@ -159,6 +159,70 @@
             "odpoved3" : "Ruské",
             "odpoved4" : "Švýcarské",
             "check" : 2
+        },
+        {
+            "otazka" : "Kdo napsal román Evžen Oněgin?",
+            "odpoved1" : "A. S. Puškin",
+            "odpoved2" : "Adam Mickiewicz",
+            "odpoved3" : "K. H. Mácha",
+            "odpoved4" : "M. J. Lermontov",
+            "check" : 1
+        },
+        {
+            "otazka" : "Jak zemřel Jan Hus?",
+            "odpoved1" : "Byl sťat mečem",
+            "odpoved2" : "Byl upálen",
+            "odpoved3" : "Spáchal sebevraždu",
+            "odpoved4" : "Zemřel přirozeně",
+            "check" : 2
+        },
+        {
+            "otazka" : "Jakého žánru je Romeo a Julie?",
+            "odpoved1" : "Komedie",
+            "odpoved2" : "Bajka",
+            "odpoved3" : "Tragédie",
+            "odpoved4" : "Román",
+            "check" : 2
+        },
+        {
+            "otazka" : "Kolik je v Bibli evangelií?",
+            "odpoved1" : "1",
+            "odpoved2" : "2",
+            "odpoved3" : "3",
+            "odpoved4" : "4",
+            "check" : 4
+        },
+        {
+            "otazka" : "Co popisuje dílo Na západní frontě klid?",
+            "odpoved1" : "1. světovou válku",
+            "odpoved2" : "2. světovou válku",
+            "odpoved3" : "Hospodářskou krizi",
+            "odpoved4" : "Osobní problémy autora",
+            "check" : 1
+        },
+        {
+            "otazka" : "Kam emigroval Karel Kryl?",
+            "odpoved1" : "Do USA",
+            "odpoved2" : "Do Německa",
+            "odpoved3" : "Do Velké Británie",
+            "odpoved4" : "Do Rakouska",
+            "check" : 2
+        },
+        {
+            "otazka" : "Kolik svazků za svůj život vydal J. Vrchlický?",
+            "odpoved1" : "170 svazků",
+            "odpoved2" : "210 svazků",
+            "odpoved3" : "270 svazků",
+            "odpoved4" : "100 svazků",
+            "check" : 3
+        },
+        {
+            "otazka" : "Co by se dalo označit za oxymorón?",
+            "odpoved1" : "modrý blankyt",
+            "odpoved2" : "mrtvé milenky cit",
+            "odpoved3" : "sto roků v šachtě žil",
+            "odpoved4" : "siroty po ní zůstaly",
+            "check" : 2
         }
     ]
 }

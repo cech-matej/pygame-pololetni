@@ -105,12 +105,12 @@
             "check" : 2
         },
         {
-            "otazka" : "Co označuje tzv. anšlus?",
-            "odpoved1" : "Připojení Sudet k Německu",
-            "odpoved2" : "Připojení Rakouska k Německu",
-            "odpoved3" : "Zákopovou válku",
-            "odpoved4" : "Porážku Sovětského svazu",
-            "check" : 2 
+            "otazka" : "Vyberte oblast, která od roku 1918 nepatřila k ČSR:",
+            "odpoved1" : "Čechy",
+            "odpoved2" : "Sasko",
+            "odpoved3" : "Podkarpatská Rus",
+            "odpoved4" : "Slovensko",
+            "check" : 2
         },
         {
             "otazka" : "Kdo je hlavním patronem českého národa?",
@@ -159,6 +159,70 @@
             "odpoved3" : "Adolf Eichmann",
             "odpoved4" : "Jozef Gabčík",
             "check" : 1
+        },
+         {
+            "otazka" : "Ve kterém roce proběhla první pražská defenestrace?",
+            "odpoved1" : "1620",
+            "odpoved2" : "1618",
+            "odpoved3" : "1630",
+            "odpoved4" : "1648",
+            "check" : 2
+        },
+        {
+            "otazka" : "Jak se jmenoval popravčí 27 českých pánů?",
+            "odpoved1" : "Jan Mydlář",
+            "odpoved2" : "Jan Novák",
+            "odpoved3" : "Jan Levý",
+            "odpoved4" : "Jan Svorný",
+            "check" : 1
+        },
+        {
+            "otazka" : "Jak se jmenoval zakladatel českého junáctví?",
+            "odpoved1" : "Stanislav K. Neumann",
+            "odpoved2" : "Antonín B. Svojsík",
+            "odpoved3" : "Klement Gottwald",
+            "odpoved4" : "Gustav Husák",
+            "check" : 2
+        },
+        {
+            "otazka" : "Rok 1012 je ve století:",
+            "odpoved1" : "10.",
+            "odpoved2" : "11.",
+            "odpoved3" : "9.",
+            "odpoved4" : "12.",
+            "check" : 2
+        },
+        {
+            "otazka" : "Který král měl za sestru Anežku Českou?",
+            "odpoved1" : "Václav I.",
+            "odpoved2" : "Václav II.",
+            "odpoved3" : "Václav III.",
+            "odpoved4" : "Přemysl Otakar I.",
+            "check" : 1
+        },
+        {
+            "otazka" : "Kterého roku byl vydán tzv. Rudolfův majestát?",
+            "odpoved1" : "1592",
+            "odpoved2" : "1599",
+            "odpoved3" : "1609",
+            "odpoved4" : "1701",
+            "check" : 3
+        },
+        {
+            "otazka" : "Který z těchto českých rodů patří mezi nejstarší?",
+            "odpoved1" : "Lobkowiczové",
+            "odpoved2" : "Schwarzenbergové",
+            "odpoved3" : "Kinští",
+            "odpoved4" : "Buzici",
+            "check" : 4
+        },
+        {
+            "otazka": "Kdy byla Velká čínská zeď zařazena do UNESCA?",
+            "odpoved1": "1980",
+            "odpoved2": "1972",
+            "odpoved3": "1987",
+            "odpoved4": "2004",
+            "check": 3
         }
     ]
 }
